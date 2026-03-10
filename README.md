@@ -51,6 +51,10 @@ exit tmux session without stoping execution
 ```
 ctrl+b, then pressing "d"
 ```
+reenter tmux session
+```
+tmux attach
+```
 To start a greb run in tmux first execute the following:
 ```
 source /cvmfs/software.eessi.io/versions/2023.06/init/bash
