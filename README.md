@@ -33,9 +33,9 @@ cp -a [dir]/. [target dir]
 ```
 
 
-launch jupyter 
+launch tmux session 
 ```
-tmux new -s jupyter
+tmux new -s sessionname
 ```
 ```
 conda activate dynpie3
@@ -43,9 +43,17 @@ conda activate dynpie3
 ```
 jupyter-lab --no-browser --ip='cyclone2.gfi.uib.no' --port [port nr]
 ```
-close jupyter and run 
+close tmux session and run 
 ```
-tmux kill-session -t jupyter
+tmux kill-session -t sessionname
+```
+exit tmux session without stoping execution
+```
+ctrl+b, then pressing "d"
+```
+To start a greb run in tmux first execute the following:
+```
+source /cvmfs/software.eessi.io/versions/2023.06/init/bash
 ```
 
 
